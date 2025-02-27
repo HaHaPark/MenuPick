@@ -1,7 +1,8 @@
 # MENU-PICK
 ![Image](https://github.com/user-attachments/assets/32d48ca2-0631-40c8-83d4-da914cec22b3)
 
-「食事の管理をサポートするアプリ」
+### 「食事の管理をサポートするアプリ」
+このアプリは Android Studio を使用して開発されました。
 
 ## [主な機能]
 
