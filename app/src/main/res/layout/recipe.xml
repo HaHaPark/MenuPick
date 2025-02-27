@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 뒤로가기 아이콘 -->
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/backback"
+        android:layout_gravity="start"
+        android:contentDescription="뒤로가기 아이콘"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 검색창 -->
+    <EditText
+        android:id="@+id/search_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="음식 이름을 검색하세요"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background" />
+
+    <!-- 레시피 리스트 -->
+    <ListView
+        android:id="@+id/recipe_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="8dp" />
+</LinearLayout>

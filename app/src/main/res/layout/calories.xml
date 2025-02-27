@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 뒤로가기 아이콘 -->
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/backback"
+        android:layout_gravity="start"
+        android:contentDescription="뒤로가기 아이콘" />
+
+    <TextView
+        android:id="@+id/tv_calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[ 오늘의 칼로리 기록 ]"
+        android:textColor="#431903"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <!-- 칼로리 기록 표시 컨테이너 -->
+    <LinearLayout
+        android:id="@+id/record_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp" />
+
+    <!-- 총 칼로리 표시 -->
+    <TextView
+        android:id="@+id/tv_total_calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘 먹은 칼로리는 0 kcal 입니다."
+        android:textColor="#431903"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <!-- 새로운 메뉴 입력 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/et_food_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="메뉴 이름"
+            android:padding="8dp"
+            android:background="@drawable/edittext_background" />
+
+        <EditText
+            android:id="@+id/et_calories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="칼로리"
+            android:inputType="number"
+            android:padding="8dp"
+            android:background="@drawable/edittext_background" />
+
+        <Button
+            android:id="@+id/btn_add_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추가" />
+    </LinearLayout>
+</LinearLayout>

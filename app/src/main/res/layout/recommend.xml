@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 뒤로가기 아이콘 -->
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/backback"
+        android:layout_gravity="start"
+        android:contentDescription="뒤로가기 아이콘" />
+
+
+    <Button
+        android:id="@+id/btn_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="추천받기"
+        android:background="#FFEC5B20"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:id="@+id/img_recommendation"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:contentDescription="추천 이미지"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_recommendation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘의 음식을 추찬합니다."
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#431903"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_marginTop="8dp"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:text="기록 저장"
+        android:layout_gravity="center" />
+</LinearLayout>

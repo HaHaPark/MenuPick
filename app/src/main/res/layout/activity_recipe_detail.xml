@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 뒤로가기 아이콘 -->
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/backback"
+        android:layout_gravity="start"
+        android:contentDescription="뒤로가기 아이콘"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/food_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/food_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/ingredients_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="필요한 재료 : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:paddingBottom="6dp" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:id="@+id/recipe_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="레시피 : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" />
+</LinearLayout>
